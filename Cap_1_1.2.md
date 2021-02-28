@@ -198,3 +198,56 @@ F &amp; F &amp; F &amp; F &amp; F &amp; F &amp; T &amp; F &amp; T &amp; F &amp; 
 " /></p>
 Vemos en la columna 11 que el enunciado [(P ∧ Q) → R] → [P → (Q → R)] es siempre verdadero, independientemente de que cada uno de P, Q y R sea verdadero o falso. Por tanto, el enunciado es una tautología. Supongamos que P = "Sam está triste", que Q = "Warren está triste" y que R = "Sam y Warren comen pasta". Entonces el enunciado se convierte en "Si es cierto que si Sam y Warren están tristes entonces comen pasta, entonces es cierto que si Sam está triste, entonces si Warren está triste comen pasta". 
 Como ejemplo de contradicción, el lector puede comprobar con una tabla de verdad que el enunciado [Q → (P∧¬Q)]∧Q es siempre falso.
+##1.3 Relaciones entre enunciados
+Hasta ahora hemos construido enunciados; ahora queremos hablar de las relaciones entre ellos.
+entre ellos. Las relaciones entre enunciados no son enunciados formales en sí mismos,
+sino que son "meta-enunciados" que hacemos sobre los enunciados. Un ejemplo de metaenunciado es la observación
+ejemplo de metaenunciado es la observación de que "si el enunciado 'Ethel es alta y Agnes es baja'
+es verdadera, entonces la afirmación 'Ethel es alta' es verdadera". Otro ejemplo es "el enunciado
+'Irving tiene el pelo castaño o Mel es pelirrojo' es verdadera y equivale a la afirmación
+'Mel es pelirroja o Irving es castaño' es verdadera". Por supuesto, tendremos que
+aclarar qué significa que un enunciado implique a otro, o que sea equivalente a un
+pero, sea cual sea la aproximación formal a estos conceptos, intuitivamente los dos metaenunciados anteriores parecen correctos.
+dos metaenunciados parecen correctos.
+Se podría objetar que los ejemplos anteriores de metaenunciados son de hecho
+enunciados en sí mismos, lo cual es bastante cierto de manera informal, aunque en un entorno formal,
+que no presentamos aquí, hay una diferencia entre un enunciado bien formado
+bien formada en un lenguaje formal dado y un meta-enunciado que podríamos hacer sobre
+sobre dichos enunciados formales. En la práctica, la distinción entre enunciados y metaenunciados es lo suficientemente sencilla como para que podamos hacerla.
+En la práctica, la distinción entre enunciados y metaenunciados es lo suficientemente sencilla como para que la utilicemos aquí.
+Los dos ejemplos de relaciones entre enunciados citados anteriormente representan los dos
+tipos de relaciones que estudiaremos, a saber, la implicación y la equivalencia, que
+son los análogos de los meta-enunciados de los condicionales y bicondicionales. Comenzamos con la im-
+plicación.
+La idea intuitiva de la implicación lógica es que el enunciado P implica al enunciado Q si
+necesariamente Q es verdadero siempre que P sea verdadero. En otras palabras, nunca puede darse el caso de que P sea verdadero y Q sea falso. La necesidad es la clave aquí, porque un enunciado que implica a otro no debe ser simplemente una cuestión de valores de verdad coincidentes. Consideremos los enunciados P = "el cielo es azul" y Q = "la hierba es verde". Dado lo que sabemos sobre el cielo y la hierba, el enunciado "si el cielo es azul, entonces la hierba es verde" es ciertamente verdadero (es decir, el enunciado P → Q es verdadero), porque tanto P como Q son verdaderos. Sin embargo, y este es el punto clave, no querríamos decir que "el cielo es azul" implica lógicamente que "la hierba es verde", porque la implicación lógica no debería depender de los valores de verdad particulares de los enunciados particulares. ¿Qué pasaría si, debido a algún desastre medioambiental, toda la hierba del mundo se volviera repentinamente negra, aunque el cielo siguiera siendo azul? Entonces la afirmación "si el cielo es azul, la hierba es verde" sería falsa. Como esta posibilidad podría ocurrir en principio, no decimos que "el cielo es azul" implica que "la hierba es verde". En general, aunque P → Q sea verdadera ahora, dado que podría ser falsa en otras circunstancias, no podemos decir que P implica Q. Para que P implique Q, necesitamos que P → Q sea verdadera en todas las circunstancias posibles.
+Consideremos ahora los dos enunciados "no es el caso que, si Susana piensa que Lisa es guapa entonces le gusta Lisa" y "Susana piensa que Lisa es guapa o le gusta Lisa". Que cada una de estas afirmaciones sea realmente verdadera o falsa depende de que se sepa si Susan piensa que Lisa es guapa o no, y si a Susan le gusta Lisa o no. Lo que siempre ocurrirá, como pronto veremos, es que la afirmación "no es el caso de que, si Susana piensa que Lisa es guapa, entonces le gusta Lisa" implica la afirmación "Susana piensa que Lisa es guapa o le gusta Lisa", independientemente de que cada una de las afirmaciones componentes sea verdadera o falsa.
+Sea P = "Susana piensa que Lisa es guapa" y Q = "A Susana le gusta Lisa". Entonces queremos demostrar que ¬(P → Q) implica P∨Q. Demostramos esta implicación de dos maneras. Primero, comprobamos las tablas de verdad para cada uno de ¬(P → Q) y P∨Q, que son
+
+##1.3 Relaciones entre enunciados
+Hasta ahora hemos construido enunciados; ahora queremos hablar de las relaciones entre ellos.
+entre ellos. Las relaciones entre enunciados no son enunciados formales en sí mismos,
+sino que son "meta-enunciados" que hacemos sobre los enunciados. Un ejemplo de metaenunciado es la observación
+ejemplo de metaenunciado es la observación de que "si el enunciado 'Ethel es alta y Agnes es baja'
+es verdadera, entonces la afirmación 'Ethel es alta' es verdadera". Otro ejemplo es "el enunciado
+'Irving tiene el pelo castaño o Mel es pelirrojo' es verdadera y equivale a la afirmación
+'Mel es pelirroja o Irving es castaño' es verdadera". Por supuesto, tendremos que
+aclarar qué significa que un enunciado implique a otro, o que sea equivalente a un
+pero, sea cual sea la aproximación formal a estos conceptos, intuitivamente los dos metaenunciados anteriores parecen correctos.
+dos metaenunciados parecen correctos.
+Se podría objetar que los ejemplos anteriores de metaenunciados son de hecho
+enunciados en sí mismos, lo cual es bastante cierto de manera informal, aunque en un entorno formal,
+que no presentamos aquí, hay una diferencia entre un enunciado bien formado
+bien formada en un lenguaje formal dado y un meta-enunciado que podríamos hacer sobre
+sobre dichos enunciados formales. En la práctica, la distinción entre enunciados y metaenunciados es lo suficientemente sencilla como para que podamos hacerla.
+En la práctica, la distinción entre enunciados y metaenunciados es lo suficientemente sencilla como para que la utilicemos aquí.
+Los dos ejemplos de relaciones entre enunciados citados anteriormente representan los dos
+tipos de relaciones que estudiaremos, a saber, la implicación y la equivalencia, que
+son los análogos de los meta-enunciados de los condicionales y bicondicionales. Comenzamos con la im-
+plicación.
+La idea intuitiva de la implicación lógica es que el enunciado P implica al enunciado Q si
+necesariamente Q es verdadero siempre que P sea verdadero. En otras palabras, nunca puede darse el caso de que P sea verdadero y Q sea falso. La necesidad es la clave aquí, porque un enunciado que implica a otro no debe ser simplemente una cuestión de valores de verdad coincidentes. Consideremos los enunciados P = "el cielo es azul" y Q = "la hierba es verde". Dado lo que sabemos sobre el cielo y la hierba, el enunciado "si el cielo es azul, entonces la hierba es verde" es ciertamente verdadero (es decir, el enunciado P → Q es verdadero), porque tanto P como Q son verdaderos. Sin embargo, y este es el punto clave, no querríamos decir que "el cielo es azul" implica lógicamente que "la hierba es verde", porque la implicación lógica no debería depender de los valores de verdad particulares de los enunciados particulares. ¿Qué pasaría si, debido a algún desastre medioambiental, toda la hierba del mundo se volviera repentinamente negra, aunque el cielo siguiera siendo azul? Entonces la afirmación "si el cielo es azul, la hierba es verde" sería falsa. Como esta posibilidad podría ocurrir en principio, no decimos que "el cielo es azul" implica que "la hierba es verde". En general, aunque P → Q sea verdadera ahora, dado que podría ser falsa en otras circunstancias, no podemos decir que P implica Q. Para que P implique Q, necesitamos que P → Q sea verdadera en todas las circunstancias posibles.
+Consideremos ahora los dos enunciados "no es el caso que, si Susana piensa que Lisa es guapa entonces le gusta Lisa" y "Susana piensa que Lisa es guapa o le gusta Lisa". Que cada una de estas afirmaciones sea realmente verdadera o falsa depende de que se sepa si Susan piensa que Lisa es guapa o no, y si a Susan le gusta Lisa o no. Lo que siempre ocurrirá, como pronto veremos, es que la afirmación "no es el caso de que, si Susana piensa que Lisa es guapa, entonces le gusta Lisa" implica la afirmación "Susana piensa que Lisa es guapa o le gusta Lisa", independientemente de que cada una de las afirmaciones componentes sea verdadera o falsa.
+Sea P = "Susana piensa que Lisa es guapa" y Q = "A Susana le gusta Lisa". Entonces queremos demostrar que ¬(P → Q) implica P∨Q. Demostramos esta implicación de dos maneras. Primero, comprobamos las tablas de verdad para cada uno de ¬(P → Q) y P∨Q, que son
+
+Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
